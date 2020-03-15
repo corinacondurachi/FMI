@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1554657377 source:e:\facultate\codeblocks\proiect2poo\main.cpp
+	<iostream>
+	<cstring>
+	<fstream>
+

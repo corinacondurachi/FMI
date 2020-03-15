@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1552667318 source:e:\facultate\codeblocks\incercare\main.cpp
+	<iostream>
+	<stdlib.h>
+	<fstream>
+
+1552988147 source:e:\facultate\codeblocks\proiect1poo\main.cpp
+	<iostream>
+	<stdlib.h>
+	<fstream>
+
