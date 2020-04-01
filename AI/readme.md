@@ -15,5 +15,5 @@ In the missionaries and cannibals problem, N missionaries and N cannibals must c
 ### 4. [Searching for a way from a source to a destination](https://github.com/corinacondurachi/FMI/blob/master/AI/cautare_drum.py)
 We are given a set of names and we have to send a ticket from a source to a destination considering some limitations. Some desks are empty and some children are angry with each other. The message can be passed to the next column only through last two rows.
 
-### [Tic-tac-toe] ()
+### [Tic-tac-toe](https://github.com/corinacondurachi/FMI/blob/master/AI/x_si_0.py)
 Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. This is an implementation of a Tic-Tac-Toe solver using the Minimax Algorithm and also Alpha-Beta pruning.
