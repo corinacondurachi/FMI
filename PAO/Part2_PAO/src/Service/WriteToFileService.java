@@ -93,7 +93,7 @@ public class WriteToFileService {
             long t = d.getTime();
             //Passed the milliseconds to constructor of Timestamp class
             Timestamp ts = new Timestamp(t);
-            fw.write(new StringBuilder().append("Appointment added on ").append(ts).toString());
+            fw.write("addAppointment" + "," +  ts.toString());
             fw.write("\n");
             fw.close();
         } catch (IOException e) {
@@ -144,7 +144,7 @@ public class WriteToFileService {
             long t = d.getTime();
             //Passed the milliseconds to constructor of Timestamp class
             Timestamp ts = new Timestamp(t);
-            fw.write(new StringBuilder().append("Appointment deleted on ").append(ts).toString());
+            fw.write("deleteAppointment" + "," +  ts.toString());
             fw.write("\n");
             fw.close();
         } catch (IOException e) {
@@ -199,7 +199,7 @@ public class WriteToFileService {
             long t = d.getTime();
             //Passed the milliseconds to constructor of Timestamp class
             Timestamp ts = new Timestamp(t);
-            fw.write(new StringBuilder().append("Appointment changed on ").append(ts).toString());
+            fw.write("changeAppointment" + "," +  ts.toString());
             fw.write("\n");
             fw.close();
         } catch (IOException e) {
@@ -250,7 +250,7 @@ public class WriteToFileService {
             long t = d.getTime();
             //Passed the milliseconds to constructor of Timestamp class
             Timestamp ts = new Timestamp(t);
-            fw.write(new StringBuilder().append("Prescription added on ").append(ts).toString());
+            fw.write("addPrescription" + "," +  ts.toString());
             fw.write("\n");
             fw.close();
         } catch (IOException e) {
