@@ -69,7 +69,7 @@ public class Main {
         DoctorsManagement doctorsManagement = new DoctorsManagement();
         NursesManagement nursesManagement = new NursesManagement();
         AppointmentsManagement appointmentsManagement = new AppointmentsManagement();
-        String PATH = "E:\\Facultate\\Part2_PAO\\src\\Data\\";
+        String PATH = "src/Data/";
         doctorsManagement = readDoctors(PATH + "doctors.csv");
         nursesManagement = readNurses(PATH + "assistants.csv");
         appointmentsManagement = readAppointments(PATH + "appointments.csv");

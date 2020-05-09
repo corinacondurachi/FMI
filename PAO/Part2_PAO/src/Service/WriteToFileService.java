@@ -87,7 +87,7 @@ public class WriteToFileService {
         }
 
         try {
-            FileWriter fw = new FileWriter(new File("E:\\Facultate\\Part2_PAO\\src\\Service\\ServiceAudit.csv"), true);
+            FileWriter fw = new FileWriter(new File("/Users/corinacondurachi/Documents/GitHub/FMI/PAO/Part2_PAO/src/Service/ServiceAudit.csv"), true);
             Date d = new Date();
             //getTime() returns current time in milliseconds
             long t = d.getTime();
@@ -138,7 +138,7 @@ public class WriteToFileService {
         }
 
         try {
-            FileWriter fw = new FileWriter(new File("E:\\Facultate\\Part2_PAO\\src\\Service\\ServiceAudit.csv"), true);
+            FileWriter fw = new FileWriter(new File("src/Service/ServiceAudit.csv"), true);
             Date d = new Date();
             //getTime() returns current time in milliseconds
             long t = d.getTime();
@@ -193,7 +193,7 @@ public class WriteToFileService {
         }
 
         try {
-            FileWriter fw = new FileWriter(new File("E:\\Facultate\\Part2_PAO\\src\\Service\\ServiceAudit.csv"), true);
+            FileWriter fw = new FileWriter(new File("src/Service/ServiceAudit.csv"), true);
             Date d = new Date();
             //getTime() returns current time in milliseconds
             long t = d.getTime();
@@ -244,7 +244,7 @@ public class WriteToFileService {
             e.printStackTrace();
         }
         try {
-            FileWriter fw = new FileWriter(new File("E:\\Facultate\\Part2_PAO\\src\\Service\\ServiceAudit.csv"), true);
+            FileWriter fw = new FileWriter(new File("src/Service/ServiceAudit.csv"), true);
             Date d = new Date();
             //getTime() returns current time in milliseconds
             long t = d.getTime();
