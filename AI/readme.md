@@ -17,16 +17,16 @@ We are given a set of names and we have to send a ticket from a source to a dest
 
 ## 1. Min-Max algorithm and Alpha-Beta Pruning
 
-### 1. [Tic-tac-toe](https://github.com/corinacondurachi/FMI/blob/master/AI/MinMax%20-%20Alpha%20Beta%20Pruning/tic_tac_toe.py)
+### 1. [Tic-tac-toe](https://github.com/corinacondurachi/FMI/blob/master/AI/MinMax%20-%20AlphaBeta%20Pruning/tic_tac_toe.py)
 Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. This is an implementation of a Tic-Tac-Toe solver using the Minimax Algorithm and also Alpha-Beta pruning.
 
-### 2. [Connected-Four](https://github.com/corinacondurachi/FMI/blob/master/AI/MinMax%20-%20Alpha%20Beta%20Pruning/connected4.py)
+### 2. [Connected-Four](https://github.com/corinacondurachi/FMI/blob/master/AI/MinMax%20-%20AlphaBeta%20Pruning/connected4.py)
 Connect Four s a two-player connection board game in which the players first choose a color and then take turns dropping one colored disc from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. Connect Four is a solved game. The first player can always win by playing the right moves. This is an implementation of a Connected-Four solver using the Minimax Algorithm and also Alpha-Beta pruning.
 
-### 3. [Reversi](https://github.com/corinacondurachi/FMI/blob/master/AI/MinMax%20-%20Alpha%20Beta%20Pruning/Reversi.py)
+### 3. [Reversi](https://github.com/corinacondurachi/FMI/blob/master/AI/MinMax%20-%20AlphaBeta%20Pruning/reversi.py)
 Reversi is a strategy board game for two players, played on an 8×8 uncheckered board. Players take turns placing disks on the board with their assigned color facing up. During a play, any disks of the opponent's color that are in a straight line and bounded by the disk just placed and another disk of the current player's color are turned over to the current player's color. The object of the game is to have the majority of disks turned to display your color when the last playable empty square is filled. This is an implementation of a Reversi solver using the Minimax Algorithm and also Alpha-Beta pruning.
 
 
-### 4. [Bomberman](https://github.com/corinacondurachi/FMI/blob/master/AI/MinMax%20-%20Alpha%20Beta%20Pruning/Bomberman.py)
+### 4. [Bomberman](https://github.com/corinacondurachi/FMI/tree/master/AI/MinMax%20-%20AlphaBeta%20Pruning/bomberman)
 Bomberman is a strategic, maze-based video game franchise originally developed by Hudson Soft and currently owned by Konami. This is an implementation of a Bomberman solver using the Minimax Algorithm and also Alpha-Beta pruning.
 
