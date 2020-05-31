@@ -1,4 +1,10 @@
+package dataBase;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.*;
+import java.util.Date;
 import java.util.Scanner;
 
 public class doctorsDB {
@@ -45,18 +51,32 @@ public class doctorsDB {
             preparedStmt.execute();
             con.close();
             System.out.println("Doctor added");
+            try {
+                FileWriter fw = new FileWriter(new File("src/Service/ServiceAudit.csv"), true);
+                java.util.Date d = new Date();
+                //getTime() returns current time in milliseconds
+                long t = d.getTime();
+                //Passed the milliseconds to constructor of Timestamp class
+                Timestamp ts = new Timestamp(t);
+                String currentThreadName = Thread.currentThread().getName();
+                fw.write("addDoctor" + "," +  ts.toString() + currentThreadName + "\n");
+                fw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }
 
-    public static void showDoctors(String host, String username, String pass) {
+    public static String showDoctors(String host, String username, String pass) {
         try {
             Connection con = DriverManager.getConnection(host, username, pass);
             Statement stat = con.createStatement();
             String sql = "select * from doctors";
             ResultSet rs = stat.executeQuery(sql);
+            String p = "";
             while (rs.next()) {
                 int id = rs.getInt("iddoctors");
                 String firstName = rs.getString("firstName");
@@ -68,13 +88,28 @@ public class doctorsDB {
                 int shiftStart = rs.getInt("shiftStart");
                 int shiftEnd = rs.getInt("shiftEnd");
 
-                String p = id + " " + firstName + " " + lastName + " " + age + " " + sex + " " + speciality + " " + consultationCost + " " + shiftStart + " "
-                        + shiftEnd;
-                System.out.println(p);
+                p += id + " " + firstName + " " + lastName + " " + age + " " + sex + " " + speciality + " " + consultationCost + " " + shiftStart + " "
+                        + shiftEnd + "\n";
+
             }
             con.close();
+            try {
+                FileWriter fw = new FileWriter(new File("src/Service/ServiceAudit.csv"), true);
+                Date d = new Date();
+                //getTime() returns current time in milliseconds
+                long t = d.getTime();
+                //Passed the milliseconds to constructor of Timestamp class
+                Timestamp ts = new Timestamp(t);
+                String currentThreadName = Thread.currentThread().getName();
+                fw.write("showDoctors" + "," +  ts.toString() + currentThreadName + "\n");
+                fw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return p;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            return null;
         }
     }
 
@@ -102,6 +137,19 @@ public class doctorsDB {
             // execute the java preparedstatement
             preparedStmt.executeUpdate();
             con.commit();
+            try {
+                FileWriter fw = new FileWriter(new File("src/Service/ServiceAudit.csv"), true);
+                Date d = new Date();
+                //getTime() returns current time in milliseconds
+                long t = d.getTime();
+                //Passed the milliseconds to constructor of Timestamp class
+                Timestamp ts = new Timestamp(t);
+                String currentThreadName = Thread.currentThread().getName();
+                fw.write("updateDoctor" + "," +  ts.toString() + currentThreadName + "\n");
+                fw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
             System.out.println("Doctor updated");
 
@@ -129,12 +177,22 @@ public class doctorsDB {
             preparedStmt.execute();
             preparedStmt.close();
             con.close();
+            try {
+                FileWriter fw = new FileWriter(new File("src/Service/ServiceAudit.csv"), true);
+                Date d = new Date();
+                //getTime() returns current time in milliseconds
+                long t = d.getTime();
+                //Passed the milliseconds to constructor of Timestamp class
+                Timestamp ts = new Timestamp(t);
+                String currentThreadName = Thread.currentThread().getName();
+                fw.write("deleteDoctor" + "," +  ts.toString() + currentThreadName + "\n");
+                fw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }
-
-
-
 }

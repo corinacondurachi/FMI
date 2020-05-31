@@ -1,3 +1,10 @@
+package dataBase;
+
+import dataBase.appointmentsDB;
+import dataBase.doctorsDB;
+import dataBase.nursesDB;
+import dataBase.prescriptionsDB;
+
 import java.util.Scanner;
 
 public class MainDB {
@@ -8,9 +15,9 @@ public class MainDB {
         String pass = "corina99";
 
         System.out.println("Enter an option \n 1. Add a doctor  \n 2. Show doctors that work at the clinic\n 3. Update a doctor's schedule \n" +
-                "4. Delete a doctor \n 5. Add an appointment \n 6. Show appointments that were set \n 7. Update the date and time of an appointment \n" +
+                " 4. Delete a doctor \n 5. Add an appointment \n 6. Show appointments that were set \n 7. Update the date and time of an appointment \n" +
                 " 8. Delete an appointment \n 9. Add a nurse \n 10. Show nurses that work at the clinic \n 11. Update a nurse's schedule \n "  +
-                " 12. Delete a nurse  \n 13. Add a prescirption\n  14. Show prescriptions that were made \n 15. Update a prescription " +
+                "12. Delete a nurse  \n 13. Add a prescirption\n 14. Show prescriptions that were made \n 15. Update a prescription " +
                 "16. Delete a prescription \n 17. Exit");
         Scanner scanner = new Scanner(System.in);
         int option = scanner.nextInt();
@@ -21,7 +28,7 @@ public class MainDB {
                     break;
                 }
                 case 2: {
-                    doctorsDB.showDoctors(host,username,pass);
+                    System.out.println(doctorsDB.showDoctors(host,username,pass));
                     break;
                 }
                 case 3: {
@@ -37,7 +44,7 @@ public class MainDB {
                     break;
                 }
                 case 6: {
-                    appointmentsDB.showAppointments(host,username,pass);
+                    System.out.println(appointmentsDB.showAppointments(host,username,pass));
                     break;
                 }
                 case 7: {
@@ -53,7 +60,7 @@ public class MainDB {
                     break;
                 }
                 case 10: {
-                    nursesDB.showNurses(host,username,pass);
+                    System.out.println(nursesDB.showNurses(host,username,pass));
                     break;
                 }
                 case 11: {
@@ -69,7 +76,7 @@ public class MainDB {
                     break;
                 }
                 case 14: {
-                    prescriptionsDB.showPrescriptions(host,username,pass);
+                    System.out.println(prescriptionsDB.showPrescriptions(host,username,pass));
                     break;
                 }
                 case 15: {
@@ -86,13 +93,11 @@ public class MainDB {
                 }
             }
             System.out.println("Enter an option \n 1. Add a doctor  \n 2. Show doctors that work at the clinic\n 3. Update a doctor's schedule \n" +
-                    "4. Delete a doctor \n 5. Add an appointment \n 6. Show appointments that were set \n 7. Update the date and time of an appointment \n" +
+                    " 4. Delete a doctor \n 5. Add an appointment \n 6. Show appointments that were set \n 7. Update the date and time of an appointment \n" +
                     " 8. Delete an appointment \n 9. Add a nurse \n 10. Show nurses that work at the clinic \n 11. Update a nurse's schedule \n "  +
-                    " 12. Delete a nurse  \n 13. Add a prescirption\n  14. Show prescriptions that were made \n 15. Update a prescription " +
+                    "12. Delete a nurse  \n 13. Add a prescirption\n 14. Show prescriptions that were made \n 15. Update a prescription " +
                     "16. Delete a prescription \n 17. Exit");
             option = scanner.nextInt();
-
         }
-
     }
 }
