@@ -522,10 +522,6 @@ DECLARE
   total_movies NUMBER;
   percent_rented NUMBER;
 BEGIN
-  SELECT member_id
-  INTO rental_id
-  FROM  member m
-  WHERE lower(m.last_name)= lower(numele);
 
   SELECT COUNT(DISTINCT title_id)
   INTO rental_count
