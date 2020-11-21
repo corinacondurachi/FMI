@@ -123,7 +123,7 @@ END;
 PRINT rezultat
 
 
---6. Modifica?i exerci?iul anterior astfel Ónc‚t s? 
+--6. Modifica?i exerci?iul anterior astfel √Ænc√¢t s? 
 --ob?ine?i ?i num?rul de angaja?i din departamentul respectiv.
 
 SELECT department_name, count(*)
@@ -345,12 +345,12 @@ END;
 --Exercitii
 
 --1
-a) Valoarea variabilei numar Ón subbloc este:
-b) Valoarea variabilei mesaj1 Ón subbloc este:
-c) Valoarea variabilei mesaj2 Ón subbloc este:
-d) Valoarea variabilei numar Ón bloc este:
-e) Valoarea variabilei mesaj1 Ón bloc este:
-f) Valoarea variabilei mesaj2 Ón bloc este:
+a) Valoarea variabilei numar √Æn subbloc este:
+b) Valoarea variabilei mesaj1 √Æn subbloc este:
+c) Valoarea variabilei mesaj2 √Æn subbloc este:
+d) Valoarea variabilei numar √Æn bloc este:
+e) Valoarea variabilei mesaj1 √Æn bloc este:
+f) Valoarea variabilei mesaj2 √Æn bloc este:
 
 -- a. 2
  -- b. text 2
@@ -434,100 +434,18 @@ ORDER BY data;
 
 SELECT * FROM member;
 
-3. Defini?i un bloc anonim Ón care s? se determine num?rul 
-de filme (titluri) Ómprumutate de un membru al c?rui nume
+3. Defini?i un bloc anonim √Æn care s? se determine num?rul 
+de filme (titluri) √Æmprumutate de un membru al c?rui nume
 este introdus de la tastatur?. Trata?i urm?toarele dou? situa?ii: 
 nu exist? nici un membru cu nume dat; exist? mai mul?i membrii 
 cu acela?i nume.
 
 
-select * from title_copy;
-
-select *
-from rental
-where member_id= 101
-order by title_id;
-
-select count(*)
-from rental
-where member_id= 101
-order by title_id;
-
-
-
-select count(distinct title_id)
-from rental
-where member_id= 101
-order by title_id;
-
-
-
-select member_id, count(distinct title_id)
-from rental
-group by member_id;
-
-
 
 DECLARE
-  name VARCHAR(20) := '&input';
-  selected member.member_id%type;
-  rental_count NUMBER(2);
-BEGIN
---  SELECT member_id
---  INTO selected
---  FROM member
---  WHERE LOWER(name) = LOWER(last_name);
- 
-  SELECT COUNT(DISTINCT title_id)
-  INTO rental_count
-  FROM rental, member
-  WHERE member_id = selected;
- 
-  DBMS_OUTPUT.PUT_LINE(rental_count);
- 
-  EXCEPTION
-    WHEN NO_DATA_FOUND THEN DBMS_OUTPUT.PUT_LINE('no data found');
-    WHEN TOO_MANY_ROWS THEN DBMS_OUTPUT.PUT_LINE('too many rows');
- 
-END;
-/
-
-
-
-DECLARE
-  numele member.last_name%type := '&input';
-  
+   numele member.last_name%type := '&input';
    rental_count NUMBER(2);
 BEGIN
-  SELECT COUNT(DISTINCT title_id)
-  INTO rental_count
-  FROM rental r, member m
-  WHERE r.member_id = m.member_id
-  and lower(m.last_name)= lower(numele);
-  
-  if rental_count =0
-  then  DBMS_OUTPUT.PUT_LINE('Nu exista in baza de date/nu a facut imprumuturi');
-  else
-  DBMS_OUTPUT.PUT_LINE(rental_count || ' filme imprumutate');
-  end if;
- 
-  EXCEPTION
-    WHEN NO_DATA_FOUND THEN DBMS_OUTPUT.PUT_LINE('no data found');
-    WHEN TOO_MANY_ROWS THEN DBMS_OUTPUT.PUT_LINE('too many rows');
- 
-END;
-/
-
-
-DECLARE
-  numele member.last_name%type := '&input';
-  rental_id number;
-   rental_count NUMBER(2);
-BEGIN
-  SELECT member_id
-  INTO rental_id
-  FROM  member m
-  WHERE lower(m.last_name)= lower(numele);
 
   SELECT COUNT(DISTINCT title_id)
   INTO rental_count
@@ -552,8 +470,6 @@ END;
 4 filme imprumutate
 
 0 filme imprumutate
-
-select * from member;
 
 
 DECLARE
@@ -589,10 +505,10 @@ BEGIN
 END;
 /
 
---4. Modifica?i problema anterioar? astfel Ónc‚t s? afi?a?i ?i urm?torul text:
---- Categoria 1 (a Ómprumutat mai mult de 75% din titlurile existente)
---- Categoria 2 (a Ómprumutat mai mult de 50% din titlurile existente)
---- Categoria 3 (a Ómprumutat mai mult de 25% din titlurile existente)
+--4. Modifica?i problema anterioar? astfel √Ænc√¢t s? afi?a?i ?i urm?torul text:
+--- Categoria 1 (a √Æmprumutat mai mult de 75% din titlurile existente)
+--- Categoria 2 (a √Æmprumutat mai mult de 50% din titlurile existente)
+--- Categoria 3 (a √Æmprumutat mai mult de 25% din titlurile existente)
 --- Categoria 4 (altfel)
 
 
@@ -642,8 +558,8 @@ END;
 /
 
 --5
---Crea?i tabelul member_*** (o copie a tabelului member). Ad?uga?i Ón acest tabel coloana
---discount, care va reprezenta procentul de reducere aplicat pentru membrii, Ón func?ie de categoria
+--Crea?i tabelul member_*** (o copie a tabelului member). Ad?uga?i √Æn acest tabel coloana
+--discount, care va reprezenta procentul de reducere aplicat pentru membrii, √Æn func?ie de categoria
 --din care fac parte ace?tia:
 --- 10% pentru membrii din Categoria 1
 --- 5% pentru membrii din Categoria 1
