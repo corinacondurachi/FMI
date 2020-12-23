@@ -37,3 +37,4 @@
 /Users/corinacondurachi/RiderProjects/proiect_daw/obj/Debug/net5.0/proiect_daw.pdb
 /Users/corinacondurachi/RiderProjects/proiect_daw/obj/Debug/net5.0/proiect_daw.genruntimeconfig.cache
 /Users/corinacondurachi/RiderProjects/proiect_daw/obj/Debug/net5.0/proiect_daw.csproj.CopyComplete
+/Users/corinacondurachi/RiderProjects/proiect_daw/obj/Debug/net5.0/Razor/Views/Home/Team.cshtml.g.cs

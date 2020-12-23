@@ -22,6 +22,11 @@ namespace proiect_daw.Controllers
         {
             return View();
         }
+        
+        public IActionResult Team()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

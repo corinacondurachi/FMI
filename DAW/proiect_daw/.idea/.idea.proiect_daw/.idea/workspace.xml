@@ -13,6 +13,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Controllers/team.cs" />
+        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/Views/Home/Team.cshtml" />
+        <option value="$PROJECT_DIR$/proiect_daw.csproj" />
         <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
       </list>
     </option>
@@ -68,37 +72,61 @@
       <option name="presentableId" value="Default" />
       <updated>1608738459902</updated>
       <workItem from="1608738473915" duration="452000" />
+      <workItem from="1608739281724" duration="1145000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1608738990942">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1608740463208">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1608738990942" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1608740371636" />
     <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1608738971856" />
-    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1608738990941">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1608740463208" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1608740463208">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1608738990941" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1608740371635" />
     <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1608738971854" />
-    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1608738990941">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1608740463208" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1608740463207">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1608738990941" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1608740371634" />
     <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1608738971851" />
-    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1608738990942">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1608740463207" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1608740463208">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1608738990942" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1608740371635" />
     <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1608738971855" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1608740463208" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Controllers/HomeController.cs</url>
+          <line>27</line>
+          <properties documentPath="$PROJECT_DIR$/Controllers/HomeController.cs" initialLine="27">
+            <startOffsets>
+              <option value="628" />
+            </startOffsets>
+            <endOffsets>
+              <option value="642" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
