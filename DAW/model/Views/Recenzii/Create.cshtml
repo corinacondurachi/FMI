@@ -1,0 +1,72 @@
+@model model.Models.Recenzie
+
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add new book</h2>
+
+<br />
+
+@using (Html.BeginForm())
+{
+<div class="form-horizontal">
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Titlu, new { @class = "control-label col-md-3" })
+        <div class="col-md-9">
+            @Html.TextBoxFor(x => x.Titlu, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Titlu, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Film, new { @class = "control-label col-md-3" })
+        <div class="col-md-9">
+            @*@Html.DropDownList("AuthorId", new SelectList(ViewBag.Authors, "AuthorId", "AuthorName"))*@
+            @Html.DropDownList("IDFilm", (SelectList)ViewBag.Films)
+            @Html.ValidationMessageFor(x => x.IDFilm, "", new {@class = "text-danger"})
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Comentariu, new { @class = "control-label col-md-3" })
+        <div class="col-md-9">
+            @Html.TextBoxFor(x => x.Comentariu, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Comentariu, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Nota, new { @class = "control-label col-md-3" })
+        <div class="col-md-9">
+            @Html.TextBoxFor(x => x.Nota, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Nota, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Data, new { @class = "control-label col-md-3" })
+        <div class="col-md-9">
+            @Html.TextAreaFor(x => x.Data, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Data, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    
+    <div class="form-group">
+            @Html.LabelFor(x => x.NumeUtilizator, new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.TextAreaFor(x => x.NumeUtilizator, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.NumeUtilizator, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+    <div class="form-group">
+        <div class="col-md-10 col-md-offset-2">
+            <input type="submit" value="Cauta" class="btn btn-primary" />
+        </div>
+    </div>
+
+</div>
+}

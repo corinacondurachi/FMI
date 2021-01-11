@@ -1,0 +1,45 @@
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista filme si notele lor</h2>
+
+<br />
+
+@{
+    var filme = ViewData["films"] as List<Film>;
+    var recenzii = ViewData["recenzii"] as List<Recenzie>;
+    
+    foreach (var film in filme)
+    {
+        <div class="col-md-4 col-lg-4 col-xs-6 col-sm-4">
+            
+            @Html.Label("Titlu", "Titlu:")
+            <p>@film.Denumire</p>
+
+            <br />
+
+            @Html.Label("Media", "Media notelor:")
+            @{
+                var suma = 0.0;
+                var nr = 0;
+                foreach (var recenzie in recenzii)
+                 {
+                     if (@recenzie.IDFilm == film.IDFilm)
+                     {
+                         suma += @recenzie.Nota;
+                         nr += 1;
+                     }
+                 }
+                <p>@(@suma/@nr)</p>
+             }
+            
+            <br />
+
+        </div>
+
+
+
+
+    }
+}

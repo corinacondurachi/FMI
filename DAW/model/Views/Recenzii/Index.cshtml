@@ -1,0 +1,64 @@
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista recenzii</h2>
+
+<a href="/recenzii/create" class="btn btn-success">Creare recenzie</a>
+
+<br />
+
+@{
+    var recenzii = ViewData["recenzii"] as List<Recenzie>;
+    List<Recenzie> SortedList = recenzii.OrderBy(o=>o.Nota).ToList();
+    
+    foreach (var recenzie in SortedList)
+    {
+        <div class="col-md-4 col-lg-4 col-xs-6 col-sm-4">
+            
+            @Html.Label("Titlu", "Titlu:")
+            <p>@recenzie.Titlu</p>
+
+            <br />
+
+            @Html.Label("Film", "Film:")
+            <p>@recenzie.IDFilm</p>
+
+            <br />
+            
+            @Html.Label("Comentariu", "Comentariu:")
+                        <p>@recenzie.Comentariu</p>
+            
+            <br />
+            
+            @Html.Label("Nota", "Nota:")
+                        <p>@recenzie.Nota</p>
+            
+            <br />
+            
+             @Html.Label("Data", "Data:")
+                                    <p>@recenzie.Data</p>
+                        
+            <br />
+            
+             @Html.Label("Utilizator", "Utilizator:")
+                                    <p>@recenzie.NumeUtilizator</p>
+                        
+            <br />
+            
+            
+
+            <a href="/books/edit/@recenzie.IdRecenzie" class="btn btn-warning">Editare</a>
+
+            <br />
+            <br/>
+
+            <a href="/books/delete/@recenzie.IdRecenzie" class="btn btn-danger">Sterge</a>
+
+        </div>
+
+
+
+
+    }
+}
