@@ -82,7 +82,6 @@ namespace model.Controllers
         public ActionResult Edit(int id)
         {
             var recenzie = context.Recenzii.Find(id);
-            //var book = context.Books.Where(x => x.Id == id);
 
             if (recenzie == null)
             {

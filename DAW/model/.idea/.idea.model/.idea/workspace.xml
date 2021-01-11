@@ -26,16 +26,16 @@
         <option value="$PROJECT_DIR$/Models/Recenzie.cs" />
         <option value="$PROJECT_DIR$/Data/AppDbContext.cs" />
         <option value="$PROJECT_DIR$/appsettings.json" />
-        <option value="$PROJECT_DIR$/Views/Recenzii/Index.cshtml" />
         <option value="$PROJECT_DIR$/Views/Recenzii/Media.cs" />
         <option value="$PROJECT_DIR$/Views/Recenzii/CautaFilm.cs" />
         <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/Views/Recenzii/Cautare.cs" />
         <option value="$PROJECT_DIR$/Views/Recenzii/Media.cshtml" />
         <option value="$PROJECT_DIR$/Views/Recenzii/CautaFilm.cshtml" />
-        <option value="$PROJECT_DIR$/Controllers/RecenziiController.cs" />
         <option value="$PROJECT_DIR$/Views/Recenzii/Create.cshtml" />
         <option value="$PROJECT_DIR$/Views/Recenzii/Cautare.cshtml" />
+        <option value="$PROJECT_DIR$/Controllers/RecenziiController.cs" />
+        <option value="$PROJECT_DIR$/Views/Recenzii/Index.cshtml" />
       </list>
     </option>
   </component>
@@ -102,6 +102,7 @@
       <workItem from="1610303699211" duration="3033000" />
       <workItem from="1610358495031" duration="4807000" />
       <workItem from="1610363548959" duration="9986000" />
+      <workItem from="1610375973879" duration="327000" />
     </task>
     <servers />
   </component>
