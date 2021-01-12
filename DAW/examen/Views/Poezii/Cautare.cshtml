@@ -1,0 +1,25 @@
+<h2>Cauta</h2>
+
+<form asp-action="CautarePoezie"  asp-controller="Poezii" method="get">
+
+    <div class="form-group">
+        <div class="col-md-9">
+            <label >Titlu poezie</label>
+            <input name="titluPoezie" class="form-control"/>
+        </div>
+    </div>
+
+   <div class="form-group">
+           <div class="col-md-9">
+               <label >Titlu volum</label>
+               <input name="titluVolum" class="form-control"/>
+           </div>
+       </div>
+
+    <div class="form-group">
+        <div class="col-md-10 col-md-offset-2">
+            <input type="submit" value="Cauta" class="btn btn-primary" />
+        </div>
+    </div>
+     
+</form>

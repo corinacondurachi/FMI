@@ -1,0 +1,55 @@
+@model examen.Models.Poezie
+
+<h2>Editare</h2>
+
+<br />
+
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        
+        @Html.HiddenFor(x => x.IdPoezie);
+
+        <div class="form-group">
+            @Html.LabelFor(x => x.Titlu, new {@class = "control-label col-md-3"})
+            <div class="col-md-9">
+                @Html.TextBoxFor(x => x.Titlu, new {@class = "form-control"})
+                @Html.ValidationMessageFor(x => x.Titlu, "", new {@class = "text-danger"})
+            </div>
+        </div>
+        
+         <div class="form-group">
+                @Html.LabelFor(x => x.Volum, new { @class = "control-label col-md-3" })
+                <div class="col-md-9">
+                    @Html.DropDownList("IDVolum", (SelectList)ViewBag.Volume)
+                    @Html.ValidationMessageFor(x => x.IdVolum, "", new {@class = "text-danger"})
+                </div>
+            </div>
+
+        <div class="form-group">
+            @Html.LabelFor(x => x.NrStrofe, new {@class = "control-label col-md-3"})
+            <div class="col-md-9">
+                @Html.TextBoxFor(x => x.NrStrofe, new {@class = "form-control"})
+                @Html.ValidationMessageFor(x => x.NrStrofe, "", new {@class = "text-danger"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(x => x.Autor, new {@class = "control-label col-md-3"})
+            <div class="col-md-9">
+                @Html.TextBoxFor(x => x.Autor, new {@class = "form-control"})
+                @Html.ValidationMessageFor(x => x.Autor, "", new {@class = "text-danger"})
+            </div>
+        </div>
+
+        
+        
+
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <input type="submit" value="Edit" class="btn btn-primary"/>
+            </div>
+        </div>
+
+    </div>
+}

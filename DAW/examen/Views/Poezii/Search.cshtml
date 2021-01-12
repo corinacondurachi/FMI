@@ -1,0 +1,53 @@
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista poezii</h2>
+
+<a href="/poezii/create" class="btn btn-success">Creare poezie</a>
+
+<br />
+
+@{
+    var poezii = ViewData["poezii"] as List<Poezie>;
+    
+    foreach (var poezie in poezii)
+    {
+        <div class="col-md-4 col-lg-4 col-xs-6 col-sm-4">
+            
+            @Html.Label("Titlu", "Titlu:")
+            <p>@poezie.Titlu</p>
+
+            <br />
+
+            @Html.Label("Autor", "Autor:")
+            <p>@poezie.Autor</p>
+
+            <br />
+            
+            @Html.Label("NrStrofe", "NrStrofe:")
+            <p>@poezie.NrStrofe</p>
+            
+            <br />
+            
+            @Html.Label("Denumire Volum", "Denumire Volum:")
+            <p>@poezie.Volum.Denumire</p>
+            
+            <br />
+            
+            
+
+            <a href="/poezii/edit/@poezie.IdPoezie" class="btn btn-warning">Editare</a>
+
+            <br />
+            <br/>
+
+            <a href="/poezii/delete/@poezie.IdPoezie" class="btn btn-danger">Sterge</a>
+
+        </div>
+
+
+
+
+    }
+}
